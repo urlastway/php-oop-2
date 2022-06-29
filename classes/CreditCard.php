@@ -21,6 +21,11 @@ class CreditCard {
 
     public function setExpireDate($_expireDate)
     {
+        $today = date('Y-m-d');
+        if($_expireDate < $today){
+            throw new Exception('La carta è scadita');
+        }
+
         $this->expireDate = $_expireDate;
     }
 }
