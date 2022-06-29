@@ -8,7 +8,7 @@ class CreditCard {
     public $surname;
     public $cvc;
 
-    public function __construct(string $_number, string $_expire_date, string $_brand, string $_name, string $_surname, int $_cvc)
+    public function __construct(string $_number, string $_expireDate, string $_brand, string $_name, string $_surname, int $_cvc)
     {
         $this->number = $_number;
         $this->brand = $_brand;
